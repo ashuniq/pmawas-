@@ -1,0 +1,11 @@
+apply plugin:'com.android.application'
+android {
+ compileSdk 34
+ defaultConfig {
+  applicationId "com.ashuniq.pmawas"
+  minSdk 24
+  targetSdk 34
+ }
+ buildTypes { release { signingConfig signingConfigs.debug } }
+}
+dependencies { implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22" }
